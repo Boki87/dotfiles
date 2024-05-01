@@ -1,5 +1,6 @@
 return {
   { "rose-pine/neovim", name = "rose-pine" },
+  { "Shatur/neovim-ayu", name = "ayu" },
   {
     "catppuccin/nvim",
     lazy = true,
@@ -41,6 +42,13 @@ return {
         which_key = true,
       },
     },
+  },
+  {
+    "lalitmee/cobalt2.nvim",
+    dependencies = { "tjdevries/colorbuddy.nvim", tag = "v1.0.0" },
+    init = function()
+      require("colorbuddy").colorscheme("cobalt2")
+    end,
   },
   { "ellisonleao/gruvbox.nvim" },
   {
