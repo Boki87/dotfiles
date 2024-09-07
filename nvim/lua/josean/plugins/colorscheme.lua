@@ -1,6 +1,4 @@
 return {
-  { "rose-pine/neovim", name = "rose-pine" },
-  { "Shatur/neovim-ayu", name = "ayu" },
   {
     "catppuccin/nvim",
     lazy = true,
@@ -43,6 +41,8 @@ return {
       },
     },
   },
+  { "rose-pine/neovim", name = "rose-pine" },
+  { "Shatur/neovim-ayu", name = "ayu" },
   {
     "lalitmee/cobalt2.nvim",
     dependencies = { "tjdevries/colorbuddy.nvim", tag = "v1.0.0" },
@@ -86,7 +86,7 @@ return {
         end,
       })
       -- load the colorscheme here
-      -- vim.cmd([[colorscheme tokyonight]])
+      vim.cmd([[colorscheme tokyonight]])
     end,
   },
   {
@@ -94,7 +94,7 @@ return {
     priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
       -- load the colorscheme here
-      vim.cmd([[colorscheme nightfly]])
+      -- vim.cmd([[colorscheme nightfly]])
     end,
   },
   {
@@ -142,7 +142,7 @@ return {
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
     priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
-      vim.cmd([[ colorscheme NeoSolarized ]])
+      -- vim.cmd([[ colorscheme NeoSolarized ]])
     end,
   },
 }

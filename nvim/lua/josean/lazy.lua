@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({ { import = "josean.plugins" }, { import = "josean.plugins.lsp" } }, {
   install = {
-    colorscheme = { "rose-pine-main" },
+    colorscheme = { "catppuccin" },
   },
   checker = {
     enabled = true,
@@ -23,3 +23,5 @@ require("lazy").setup({ { import = "josean.plugins" }, { import = "josean.plugin
     notifr = false,
   },
 })
+
+vim.cmd([[colorscheme catppuccin]])

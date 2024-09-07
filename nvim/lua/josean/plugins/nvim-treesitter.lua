@@ -31,6 +31,7 @@ return {
           "yaml",
           "html",
           "css",
+          "scss",
           "prisma",
           "markdown",
           "markdown_inline",
@@ -42,6 +43,7 @@ return {
           "dockerfile",
           "gitignore",
           "query",
+          "astro",
         },
         incremental_selection = {
           enable = true,
@@ -55,7 +57,7 @@ return {
       })
 
       -- enable nvim-ts-context-commentstring plugin for commenting tsx and jsx
-      require('ts_context_commentstring').setup {}
+      require("ts_context_commentstring").setup({})
     end,
   },
 }
